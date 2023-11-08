@@ -26,3 +26,71 @@ Güvenlik: VLAN'lar ağ güvenliğini artırabilir, çünkü trafiği izole edeb
 Trafik Yönetimi: VLAN'lar, ağ trafiğini daha iyi düzenlemek için kullanılabilir. Örneğin, farklı işlevlere sahip cihazlar arasında trafiği ayırabilirsiniz.
 
 Multilayer switchler, VLAN'ların yönetimini destekler ve farklı VLAN'lar arasında iletişimi kolaylaştırır. Bu, ağdaki veri akışını daha etkili hale getirir ve ağ yönetimini daha esnek kılar.
+
+
+
+## Şimdi Yapılandırmalara geçelim:
+
+### Multilayer Switch 1 yapılandırmaları
+
+### 2960 Switch1 (Vlan10)
+
+```
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 10
+Switch(config-vlan)#int range fa0/3-4
+Switch(config-if-range)#switchport access vlan 10
+Switch(config-if-range)#
+```
+
+### 2960 Switch1 (Vlan10)
+
+```
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 10
+Switch(config-vlan)#int range fa0/2
+Switch(config-if-range)#switchport access vlan 10
+Switch(config-if-range)#
+```
+
+### 2960 Switch2 (Vlan20)
+
+```
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 20
+Switch(config-vlan)#int range fa0/1
+Switch(config-if-range)#switchport access vlan 20
+Switch(config-if-range)#
+```
+
+### 2960 Switch3 (Vlan30)
+
+```
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 30
+Switch(config-vlan)#int range fa0/3
+Switch(config-if-range)#switchport access vlan 30
+Switch(config-if-range)#
+```
+
+### 2960 Switch3 (Vlan30)
+
+```
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 40
+Switch(config-vlan)#int range fa0/3
+Switch(config-if-range)#switchport access vlan 40
+Switch(config-if-range)#
+```
+
+
