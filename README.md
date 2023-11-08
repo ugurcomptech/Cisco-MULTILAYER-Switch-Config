@@ -138,7 +138,7 @@ Switch(config-if-range)#
 
 ## Multilayer Switch Yapılandırmaları
 
-Multilayer Switch1 Config
+### Multilayer Switch1 Config
 
 ```
 Switch>en
@@ -152,7 +152,6 @@ Switch(config-if)#int fa0/1
 Switch(config-if)#int vlan 10
 Switch(config-if)#
 Switch(config-if)#ip address 192.168.10.1 255.255.255.0
-
 Switch(config)#vlan 20
 Switch(config)#int fa0/2
 Switch(config-if)#switchport trunk encapsulation dotlq
@@ -161,7 +160,6 @@ Switch(config-if)#int fa0/2
 Switch(config-if)#int vlan 20
 Switch(config-if)#
 Switch(config-if)#ip address 192.168.20.1 255.255.255.0
-
 Switch(config)#vlan 30
 Switch(config)#int fa0/4
 Switch(config-if)#switchport trunk encapsulation dotlq
@@ -170,8 +168,6 @@ Switch(config-if)#int fa0/4
 Switch(config-if)#int vlan 30
 Switch(config-if)#
 Switch(config-if)#ip address 192.168.30.1 255.255.255.0
-
-
 Switch(config)#vlan 40
 Switch(config)#int fa0/5
 Switch(config-if)#switchport trunk encapsulation dotlq
@@ -180,8 +176,46 @@ Switch(config-if)#int fa0/5
 Switch(config-if)#int vlan 40
 Switch(config-if)#
 Switch(config-if)#ip address 192.168.40.1 255.255.255.0
-
-
 ```
 
+
+### Multilayer Switch2 Config
+
+```
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 10
+Switch(config)#int fa0/4
+Switch(config-if)#switchport trunk encapsulation dotlq
+Switch(config-if)#switchport mode trunk 
+Switch(config-if)#int fa0/4
+Switch(config-if)#int vlan 10
+Switch(config-if)#
+Switch(config-if)#ip address 192.168.10.1 255.255.255.0
+Switch(config)#vlan 20
+Switch(config)#int fa0/1
+Switch(config-if)#switchport trunk encapsulation dotlq
+Switch(config-if)#switchport mode trunk 
+Switch(config-if)#int fa0/1
+Switch(config-if)#int vlan 20
+Switch(config-if)#
+Switch(config-if)#ip address 192.168.20.1 255.255.255.0
+Switch(config)#vlan 30
+Switch(config)#int fa0/3
+Switch(config-if)#switchport trunk encapsulation dotlq
+Switch(config-if)#switchport mode trunk 
+Switch(config-if)#int fa0/3
+Switch(config-if)#int vlan 30
+Switch(config-if)#
+Switch(config-if)#ip address 192.168.30.1 255.255.255.0
+Switch(config)#vlan 40
+Switch(config)#int fa0/2
+Switch(config-if)#switchport trunk encapsulation dotlq
+Switch(config-if)#switchport mode trunk 
+Switch(config-if)#int fa0/2
+Switch(config-if)#int vlan 40
+Switch(config-if)#
+Switch(config-if)#ip address 192.168.40.1 255.255.255.0
+```
 
