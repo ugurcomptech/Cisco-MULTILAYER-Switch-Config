@@ -219,3 +219,17 @@ Switch(config-if)#
 Switch(config-if)#ip address 192.168.40.1 255.255.255.0
 ```
 
+**Teşekkürler!**
+
+2960 serisi Layer 3 switchlerin ve VLAN yapılandırmalarının başarıyla tamamlandı. Bu yapılandırmalar, ağınızı daha etkili ve yönetilebilir hale getirecek. Bu anahtarlar, ağ trafiğini yönlendirmek ve izole etmek için kullanabileceğiniz güçlü araçlardır.
+
+Ağınızı en iyi şekilde kullanmak ve yönetmek için şunları unutmayın:
+
+- Her VLAN'ın kendine ait bir IP adresi ve alt ağı vardır. Bu IP adresleri, her VLAN arasında yönlendirme yapmak ve yönetim için kullanılır.
+
+- Her bir Layer 3 anahtar, farklı VLAN'lara ait portları yönlendirir ve izole eder. Bu, ağ trafiğini düzenlemek ve güvenlik seviyelerini artırmak için kullanışlıdır.
+
+- VLAN yapılandırmalarınızı düzenli aralıklarla gözden geçirip, ihtiyaçlarınıza ve ağınızın büyümesine göre güncelleyebilirsiniz.
+
+Ağınızın performansını ve güvenliğini artırmak için bu yapılandırmaları dikkatle kullanın. Sorularınız veya ek bilgi gereksinimleriniz olduğunda benimle iletişime geçebilirsdiniz. İyi çalışmalar dilerim!
+
