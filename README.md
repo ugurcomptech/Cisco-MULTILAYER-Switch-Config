@@ -31,19 +31,7 @@ Multilayer switchler, VLAN'ların yönetimini destekler ve farklı VLAN'lar aras
 
 ## Şimdi Yapılandırmalara geçelim:
 
-### Multilayer Switch 1 yapılandırmaları
-
-### 2960 Switch1 (Vlan10)
-
-```
-Switch>en
-Switch#conf t
-Enter configuration commands, one per line.  End with CNTL/Z.
-Switch(config)#vlan 10
-Switch(config-vlan)#int range fa0/3-4
-Switch(config-if-range)#switchport access vlan 10
-Switch(config-if-range)#
-```
+### Multilayer Switch 1'e bağlı olan yapılandırmalar
 
 ### 2960 Switch1 (Vlan10)
 
@@ -81,7 +69,7 @@ Switch(config-if-range)#switchport access vlan 30
 Switch(config-if-range)#
 ```
 
-### 2960 Switch3 (Vlan30)
+### 2960 Switch3 (Vlan40)
 
 ```
 Switch>en
