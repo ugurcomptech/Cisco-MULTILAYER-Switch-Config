@@ -144,6 +144,7 @@ Switch(config-if-range)#
 Switch>en
 Switch#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#ip routing
 Switch(config)#vlan 10
 Switch(config)#int fa0/1
 Switch(config-if)#switchport trunk encapsulation dotlq
@@ -185,6 +186,7 @@ Switch(config-if)#ip address 192.168.40.1 255.255.255.0
 Switch>en
 Switch#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#ip routing
 Switch(config)#vlan 10
 Switch(config)#int fa0/4
 Switch(config-if)#switchport trunk encapsulation dotlq
